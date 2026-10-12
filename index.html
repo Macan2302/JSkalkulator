@@ -14,6 +14,8 @@
         <br>
         <button onclick="zbroj()">Zbroji</button>
         <br>
+        <button onclick="oduzmi()">Oduzmi</button>
+        <br>
         <p id="rezultat"></p>
     
     <script>
@@ -24,6 +26,14 @@
 
             document.getElementById("rezultat").textContent="zbroj: " + (a+b);
         }
+            function oduzmi()
+            {
+            let a=Number(document.getElementById("broj1").value);
+            let b=Number(document.getElementById("broj2").value);
+
+            document.getElementById("rezultat").textContent="oduzmi: "+ (a-b);
+        }
+    
     </script>
 </body>
 
